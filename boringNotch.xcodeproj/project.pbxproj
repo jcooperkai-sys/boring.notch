@@ -36,6 +36,7 @@
 		1153BD912D986DB300979FB0 /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BD902D986DB300979FB0 /* PlaybackState.swift */; };
 		1153BD932D986E4300979FB0 /* AppleMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BD922D986E4300979FB0 /* AppleMusicController.swift */; };
 		1153BD982D9881F900979FB0 /* AppleScriptHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BD972D9881F900979FB0 /* AppleScriptHelper.swift */; };
+		A1C0DE012F00000000000002 /* VerificationCodeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0DE012F00000000000001 /* VerificationCodeDetector.swift */; };
 		1153BD9A2D98824300979FB0 /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BD992D98824300979FB0 /* SpotifyController.swift */; };
 		1153BD9C2D98853B00979FB0 /* NowPlayingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BD9B2D98853B00979FB0 /* NowPlayingController.swift */; };
 		1153BDA72D99B22200979FB0 /* YouTubeMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BDA62D99B22200979FB0 /* YouTubeMusicController.swift */; };
@@ -80,6 +81,7 @@
 		1443E7F32C609DCE0027C1FC /* matters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443E7F22C609DCE0027C1FC /* matters.swift */; };
 		147163982C5D35B70068B555 /* MusicVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147163972C5D35B70068B555 /* MusicVisualizer.swift */; };
 		1471639A2C5D35FF0068B555 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147163992C5D35FF0068B555 /* MusicManager.swift */; };
+		A1C0DE012F00000000000004 /* VerificationMailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0DE012F00000000000003 /* VerificationMailManager.swift */; };
 		1471A8592C6281BD0058408D /* BoringNotchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1471A8582C6281BD0058408D /* BoringNotchWindow.swift */; };
 		149E0B972C737D00006418B1 /* WebcamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E0B962C737D00006418B1 /* WebcamManager.swift */; };
 		149E0B9A2C737D40006418B1 /* WebcamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E0B992C737D40006418B1 /* WebcamView.swift */; };
@@ -115,6 +117,7 @@
 		9A987A0D2C73CA66005CA465 /* ShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A987A032C73CA66005CA465 /* ShelfView.swift */; };
 		9A987A102C73CA8D005CA465 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 9A987A0F2C73CA8D005CA465 /* Collections */; };
 		9AB0C6BD2C73C9CB00F7CD30 /* NotchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0C6BB2C73C9CB00F7CD30 /* NotchHomeView.swift */; };
+		A1C0DE012F00000000000006 /* VerificationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0DE012F00000000000005 /* VerificationCodeView.swift */; };
 		B10348D92C74E56000475897 /* ConditionalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10348D82C74E56000475897 /* ConditionalModifier.swift */; };
 		B10F84A32C6C9596009F3026 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F84A22C6C9596009F3026 /* TestView.swift */; };
 		B141C2412CA5F53F00AC8CC8 /* SparkleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B141C2402CA5F53E00AC8CC8 /* SparkleView.swift */; };
@@ -206,6 +209,7 @@
 		1153BD902D986DB300979FB0 /* PlaybackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
 		1153BD922D986E4300979FB0 /* AppleMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicController.swift; sourceTree = "<group>"; };
 		1153BD972D9881F900979FB0 /* AppleScriptHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptHelper.swift; sourceTree = "<group>"; };
+		A1C0DE012F00000000000001 /* VerificationCodeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeDetector.swift; sourceTree = "<group>"; };
 		1153BD992D98824300979FB0 /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
 		1153BD9B2D98853B00979FB0 /* NowPlayingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingController.swift; sourceTree = "<group>"; };
 		1153BDA62D99B22200979FB0 /* YouTubeMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeMusicController.swift; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 		1443E7F42C609E650027C1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147163972C5D35B70068B555 /* MusicVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVisualizer.swift; sourceTree = "<group>"; };
 		147163992C5D35FF0068B555 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		A1C0DE012F00000000000003 /* VerificationMailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationMailManager.swift; sourceTree = "<group>"; };
 		1471A8582C6281BD0058408D /* BoringNotchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringNotchWindow.swift; sourceTree = "<group>"; };
 		149E0B962C737D00006418B1 /* WebcamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebcamManager.swift; sourceTree = "<group>"; };
 		149E0B992C737D40006418B1 /* WebcamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebcamView.swift; sourceTree = "<group>"; };
@@ -284,6 +289,7 @@
 		9A0887342C7AFF8E00C160EA /* TabSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSelectionView.swift; sourceTree = "<group>"; };
 		9A987A032C73CA66005CA465 /* ShelfView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfView.swift; sourceTree = "<group>"; };
 		9AB0C6BB2C73C9CB00F7CD30 /* NotchHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotchHomeView.swift; sourceTree = "<group>"; };
+		A1C0DE012F00000000000005 /* VerificationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeView.swift; sourceTree = "<group>"; };
 		B10348D82C74E56000475897 /* ConditionalModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalModifier.swift; sourceTree = "<group>"; };
 		B10F84A22C6C9596009F3026 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		B141C2402CA5F53E00AC8CC8 /* SparkleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleView.swift; sourceTree = "<group>"; };
@@ -458,6 +464,7 @@
 				118EBE242E92DCCB00D54B5A /* AssociatedObject.swift */,
 				11A45C782E34E63100CEB175 /* MediaChecker.swift */,
 				1153BD972D9881F900979FB0 /* AppleScriptHelper.swift */,
+				A1C0DE012F00000000000001 /* VerificationCodeDetector.swift */,
 				14288DD62C6E015000B9F80C /* AudioPlayer.swift */,
 				5955950C2E900ED800C66711 /* ApplicationRelauncher.swift */,
 				14288E0B2C6F8EC000B9F80C /* AppIcons.swift */,
@@ -514,6 +521,7 @@
 				F38DE6472D8243E2008B5C6D /* BatteryActivityManager.swift */,
 				112FB7342CCF16F70015238C /* NotchSpaceManager.swift */,
 				147163992C5D35FF0068B555 /* MusicManager.swift */,
+				A1C0DE012F00000000000003 /* VerificationMailManager.swift */,
 				149E0B962C737D00006418B1 /* WebcamManager.swift */,
 				14C08BB52C8DE42D000F8AA0 /* CalendarManager.swift */,
 				B1F0A0012E60000100000001 /* BrightnessManager.swift */,
@@ -707,6 +715,7 @@
 				1194E8862EA6DDA7009C82D6 /* BoringNotchSkyLightWindow.swift */,
 				1160F8D72DD98230006FBB94 /* NotchShape.swift */,
 				9AB0C6BB2C73C9CB00F7CD30 /* NotchHomeView.swift */,
+				A1C0DE012F00000000000005 /* VerificationCodeView.swift */,
 				14D570C52C5F38210011E668 /* BoringHeader.swift */,
 				14D570D12C5F6C6A0011E668 /* BoringExtrasMenu.swift */,
 				1471A8582C6281BD0058408D /* BoringNotchWindow.swift */,
@@ -953,6 +962,7 @@
 				14C08BC12C8E03AD000F8AA0 /* NSImage+Extensions.swift in Sources */,
 				149E0B9A2C737D40006418B1 /* WebcamView.swift in Sources */,
 				1471639A2C5D35FF0068B555 /* MusicManager.swift in Sources */,
+				A1C0DE012F00000000000004 /* VerificationMailManager.swift in Sources */,
 				B1B112932C6A577E00093D8F /* MouseTracker.swift in Sources */,
 				B1C448962C9712C4001F0858 /* ActionBar.swift in Sources */,
 				118EBE312E9717DB00D54B5A /* URL+SecurityScoped.swift in Sources */,
@@ -961,6 +971,7 @@
 				111BEA612ED09B1B0079DD4E /* NSScreen+UUID.swift in Sources */,
 				1153BD8F2D986B1F00979FB0 /* MediaControllerProtocol.swift in Sources */,
 				9AB0C6BD2C73C9CB00F7CD30 /* NotchHomeView.swift in Sources */,
+				A1C0DE012F00000000000006 /* VerificationCodeView.swift in Sources */,
 				B172AAC02C95DA0B001623F1 /* InlineHUD.swift in Sources */,
 				14E9FEAA2C70BF610062E83F /* DownloadView.swift in Sources */,
 				B1B112912C6A572100093D8F /* EditPanelView.swift in Sources */,
@@ -1008,6 +1019,7 @@
 				112FB7352CCF16F70015238C /* NotchSpaceManager.swift in Sources */,
 				14FC6E502C7DED5600C7BEA5 /* DataTypes+Extensions.swift in Sources */,
 				1153BD982D9881F900979FB0 /* AppleScriptHelper.swift in Sources */,
+				A1C0DE012F00000000000002 /* VerificationCodeDetector.swift in Sources */,
 				11CFC6612E097F6800748C80 /* PermissionsRequestView.swift in Sources */,
 				14D570D22C5F6C6A0011E668 /* BoringExtrasMenu.swift in Sources */,
 				11D58EA22E760AE100FA8377 /* ImageService.swift in Sources */,
