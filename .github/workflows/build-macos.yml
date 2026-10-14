@@ -26,9 +26,13 @@ jobs:
             -derivedDataPath build \
             CODE_SIGN_IDENTITY=- CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
             ONLY_ACTIVE_ARCH=NO 2>&1 | tee build.log | grep -E "error:|warning: .*Verification|BUILD (SUCCEEDED|FAILED)" || true
-          test -d build/Build/Products/Release/boringNotch.app
+          ls build/Build/Products/Release
+          test -d "build/Build/Products/Release/Boring Notch.app"
       - name: Zip app
-        run: ditto -c -k --keepParent build/Build/Products/Release/boringNotch.app boringNotch.zip
+        run: |
+          mkdir -p out
+          ditto "build/Build/Products/Release/Boring Notch.app" out/boringNotch.app
+          ditto -c -k --keepParent out/boringNotch.app boringNotch.zip
       - uses: actions/upload-artifact@v4
         with:
           name: boringNotch-app
