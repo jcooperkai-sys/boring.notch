@@ -423,6 +423,7 @@ struct NotchHomeView: View {
     @ObservedObject var webcamManager = WebcamManager.shared
     @ObservedObject var batteryModel = BatteryStatusViewModel.shared
     @ObservedObject var coordinator = BoringViewCoordinator.shared
+    @ObservedObject var verificationMail = VerificationMailManager.shared
     let albumArtNamespace: Namespace.ID
 
     var body: some View {
@@ -441,7 +442,18 @@ struct NotchHomeView: View {
 
     private var mainContent: some View {
         HStack(alignment: .top, spacing: (shouldShowCamera && Defaults[.showCalendar]) ? 10 : 15) {
-            MusicPlayerView(albumArtNamespace: albumArtNamespace)
+            ZStack {
+                if let alert = verificationMail.current {
+                    VerificationCodeView(alert: alert)
+                        .transition(.asymmetric(
+                            insertion: .opacity.combined(with: .scale(scale: 0.96, anchor: .leading)),
+                            removal: .opacity))
+                } else {
+                    MusicPlayerView(albumArtNamespace: albumArtNamespace)
+                        .transition(.opacity)
+                }
+            }
+            .animation(.spring(response: 0.42, dampingFraction: 0.8), value: verificationMail.current?.id)
 
             if Defaults[.showCalendar] {
                 CalendarView()

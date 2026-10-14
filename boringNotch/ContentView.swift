@@ -160,7 +160,19 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .onReceive(NotificationCenter.default.publisher(for: .verificationAlertArrived)) { _ in
+                        coordinator.currentView = .home
+                        if vm.notchState == .closed { doOpen() }
+                    }
+                    .onReceive(NotificationCenter.default.publisher(for: .verificationAlertDismissed)) { _ in
+                        if vm.notchState == .open && !isHovering && !vm.isBatteryPopoverActive && !SharingStateManager.shared.preventNotchClose {
+                            withAnimation(animationSpring) { vm.close() }
+                        }
+                    }
                     .onChange(of: vm.notchState) { _, newState in
+                        if newState == .closed {
+                            VerificationMailManager.shared.dismiss()
+                        }
                         if newState == .closed && isHovering {
                             withAnimation {
                                 isHovering = false
