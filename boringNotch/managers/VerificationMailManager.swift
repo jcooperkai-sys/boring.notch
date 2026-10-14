@@ -67,7 +67,7 @@ final class VerificationMailManager: ObservableObject {
         guard case .magicLink(let url)? = current?.payload else { return }
         let safari = NSWorkspace.shared.urlForApplication(withBundleIdentifier: "com.apple.Safari")
         if let safari {
-            NSWorkspace.shared.open([url], withApplicationAt: safari, configuration: .init())
+            NSWorkspace.shared.open([url], withApplicationAt: safari, configuration: NSWorkspace.OpenConfiguration())
         } else {
             NSWorkspace.shared.open(url)
         }
